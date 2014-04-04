@@ -1,0 +1,109 @@
+Execute (Setup mappings with Meta characters):
+  for ascii_num in range(65, 90)
+    let char = nr2char(ascii_num)
+    exe "map <M-".char."> iMeta-".char." mapping works\<Esc>"
+  endfor
+
+Execute (Assert Meta-A mappings work):
+  exe "norm A"
+  AssertEqual getline('.'), 'Meta-A mapping works'
+
+Execute (Assert Meta-B mappings work):
+  exe "norm B"
+  AssertEqual getline('.'), 'Meta-B mapping works'
+
+Execute (Assert Meta-C mappings work):
+  exe "norm C"
+  AssertEqual getline('.'), 'Meta-C mapping works'
+
+Execute (Assert Meta-D mappings work):
+  exe "norm D"
+  AssertEqual getline('.'), 'Meta-D mapping works'
+
+Execute (Assert Meta-E mappings work):
+  exe "norm E"
+  AssertEqual getline('.'), 'Meta-E mapping works'
+
+Execute (Assert Meta-F mappings work):
+  exe "norm F"
+  AssertEqual getline('.'), 'Meta-F mapping works'
+
+Execute (Assert Meta-G mappings work):
+  exe "norm G"
+  AssertEqual getline('.'), 'Meta-G mapping works'
+
+Execute (Assert Meta-H mappings work):
+  exe "norm H"
+  AssertEqual getline('.'), 'Meta-H mapping works'
+
+Execute (Assert Meta-I mappings work):
+  exe "norm I"
+  AssertEqual getline('.'), 'Meta-I mapping works'
+
+Execute (Assert Meta-J mappings work):
+  exe "norm J"
+  AssertEqual getline('.'), 'Meta-J mapping works'
+
+Execute (Assert Meta-K mappings work):
+  exe "norm K"
+  AssertEqual getline('.'), 'Meta-K mapping works'
+
+Execute (Assert Meta-L mappings work):
+  exe "norm L"
+  AssertEqual getline('.'), 'Meta-L mapping works'
+
+Execute (Assert Meta-M mappings work):
+  exe "norm M"
+  AssertEqual getline('.'), 'Meta-M mapping works'
+
+Execute (Assert Meta-N mappings work):
+  exe "norm N"
+  AssertEqual getline('.'), 'Meta-N mapping works'
+
+Execute (Assert Meta-O mapping DOES NOT work):
+  exe "norm O"
+  AssertEqual getline('.'), ''
+
+Execute (Assert Meta-P mappings work):
+  exe "norm P"
+  AssertEqual getline('.'), 'Meta-P mapping works'
+
+Execute (Assert Meta-Q mappings work):
+  exe "norm Q"
+  AssertEqual getline('.'), 'Meta-Q mapping works'
+
+Execute (Assert Meta-R mappings work):
+  exe "norm R"
+  AssertEqual getline('.'), 'Meta-R mapping works'
+
+Execute (Assert Meta-S mappings work):
+  exe "norm S"
+  AssertEqual getline('.'), 'Meta-S mapping works'
+
+Execute (Assert Meta-T mappings work):
+  exe "norm T"
+  AssertEqual getline('.'), 'Meta-T mapping works'
+
+Execute (Assert Meta-U mappings work):
+  exe "norm U"
+  AssertEqual getline('.'), 'Meta-U mapping works'
+
+Execute (Assert Meta-V mappings work):
+  exe "norm V"
+  AssertEqual getline('.'), 'Meta-V mapping works'
+
+Execute (Assert Meta-W mappings work):
+  exe "norm W"
+  AssertEqual getline('.'), 'Meta-W mapping works'
+
+Execute (Assert Meta-X mappings work):
+  exe "norm X"
+  AssertEqual getline('.'), 'Meta-X mapping works'
+
+Execute (Assert Meta-Y mappings work):
+  exe "norm Y"
+  AssertEqual getline('.'), 'Meta-Y mapping works'
+
+Execute (Assert Meta-Z mappings work):
+  exe "norm Z"
+  AssertEqual getline('.'), 'Meta-Z mapping works'

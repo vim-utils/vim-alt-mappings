@@ -1,0 +1,78 @@
+Execute (Setup mappings with Meta characters):
+  let ascii_nums = range(33, 64) + range(91, 96) + [123, 125, 126]
+  for ascii_num in ascii_nums
+    let char = nr2char(ascii_num)
+    exe "map <M-".char."> iMeta-".char." mapping works\<Esc>"
+  endfor
+
+Execute (Assert Meta-space mapping does not works(don't know how to set it)):
+  exe "map <M-space> iMeta-space mapping works\<Esc>"
+  exe "norm  "
+  AssertEqual getline('.'), ''
+
+Execute (Assert character ascii 33-40 Meta mappings work):
+  for ascii_num in range(33, 40)
+    norm! dd
+    let char = nr2char(ascii_num)
+    exe "norm ".char
+    AssertEqual getline('.'), "Meta-".char." mapping works"
+  endfor
+
+Execute (Assert character ascii 41-50 Meta mappings work):
+  for ascii_num in range(41, 50)
+    norm! dd
+    let char = nr2char(ascii_num)
+    exe "norm ".char
+    AssertEqual getline('.'), "Meta-".char." mapping works"
+  endfor
+
+Execute (Assert character ascii 51-60 Meta mappings work):
+  for ascii_num in range(51, 60)
+    norm! dd
+    let char = nr2char(ascii_num)
+    exe "norm ".char
+    AssertEqual getline('.'), "Meta-".char." mapping works"
+  endfor
+
+Execute (Assert character ascii 61-64 Meta mappings work):
+  for ascii_num in [61, 63]
+    norm! dd
+    let char = nr2char(ascii_num)
+    exe "norm ".char
+    AssertEqual getline('.'), "Meta-".char." mapping works"
+  endfor
+
+Execute (Assert Meta-@ mapping does NOT work (for an unknown reason) ):
+  exe "map <M-@> iMeta-@ mapping works\<Esc>"
+  exe "norm @"
+  AssertEqual getline('.'), ''
+
+Execute (Assert Meta-> mapping does NOT work (can't set it properly for some reason)):
+  exe "norm >"
+  AssertEqual getline('.'), ''
+
+Execute (Assert Meta-[ mapping does NOT work (it causes all kinds of weirdnesses)):
+  exe "map <M-[> iMeta-[ mapping works\<Esc>"
+  exe "norm ["
+  AssertEqual getline('.'), ''
+
+Execute (Assert character ascii 92-96 Meta mappings work):
+  for ascii_num in range(92, 96)
+    norm! dd
+    let char = nr2char(ascii_num)
+    exe "norm ".char
+    AssertEqual getline('.'), "Meta-".char." mapping works"
+  endfor
+
+Execute (Assert character ascii 123, 125, 126 Meta mappings work):
+  for ascii_num in [123, 125, 126]
+    norm! dd
+    let char = nr2char(ascii_num)
+    exe "norm ".char
+    AssertEqual getline('.'), "Meta-".char." mapping works"
+  endfor
+
+Execute (Assert Meta-| mapping works):
+  exe "map <M-bar> iMeta-bar mapping works\<Esc>"
+  exe "norm |"
+  AssertEqual getline('.'), 'Meta-bar mapping works'
