@@ -1,4 +1,20 @@
-# Alt mappings in terminal Vim (experimental)
+# This plugin is experimental
+
+This plugin is **experimental**. After "playing" with it (if you want), you
+should probably uninstall it due to problems it can cause to your workflow.
+
+After creating this plugin and validating the functionality via automated
+tests, 2 pretty big problematic areas were discovered:
+
+- it breaks macros if they use `<esc> + char`
+- mappings that use `<esc> + char` won't work
+
+So far I don't know how to solve these issues and thus the label "experimental".
+
+Please get in touch (via github issue) if you have an idea how to solve the
+above problems.
+
+# Alt mappings in terminal Vim
 
 This plugin enables `Alt` key mappings in **terminal** vim.
 
@@ -10,6 +26,8 @@ Now you can do something like this:
     map <M-$> :echo "as well as characters..."<CR>
     map <M-?> :echo "and more characters..."<CR>
     map <M-~> :echo "and more..."<CR>
+
+`Alt` behaves as just another modifier key (can't get enough of those, right?)
 
 ### Installation
 
@@ -48,6 +66,15 @@ command line mode.
 
 There are more than 90 `Alt` key mappings available, so hopefully you won't
 miss the above 4 that are not (jet?) possible.
+
+### Tests
+
+This plugin uses the excellent [vader.vim](https://github.com/junegunn/vader.vim)
+Vimscript testing framework.
+To run the tests locally:
+
+- install `vader.vim` plugin
+- in this project's root directory run `$ test/run`
 
 ### Thanks
 
