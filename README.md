@@ -67,6 +67,24 @@ command line mode.
 There are more than 90 `Alt` key mappings available, so hopefully you won't
 miss the above 4 that are not (jet?) possible.
 
+### Selectively enable Alt mappings
+
+If you're [aware of the issues](#this-plugin-is-experimental) that `Alt`
+mappings can do, and still wanna use *some* of them selectively, here's how you
+can do that.
+
+- you do **not** need to have this plugin installed
+- choose a character you're sure won't cause you problems in macros or
+mappings, for example `x`. It's unlikely you'll ever have `<Esc>x` in your
+macros or mappings.
+- enable `<M-x>` mapping by putting the following in `.vimrc`
+
+    set <M-x>=\<Esc>x
+
+- map `<M-x>` to something useful and use it!
+
+    map <M-x> :echo "really useful"<cr>
+
 ### Tests
 
 This plugin uses the excellent [vader.vim](https://github.com/junegunn/vader.vim)
