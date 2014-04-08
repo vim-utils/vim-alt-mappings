@@ -1,4 +1,4 @@
-# Alt mappings in terminal Vim
+# Alt mappings in terminal Vim (experimental)
 
 This plugin enables `Alt` key mappings in **terminal** vim.
 
@@ -29,11 +29,12 @@ Use your favorite plugin manager.
 
 ### Terminal related setup
 
-In OS X terminal setting check "Use option as meta key". (screenshot required)
+- OS X Terminal.app: check "Use option as meta key"<br/>
+  ![OS X Terminal.app setting](/osx_terminal.png)
 
-Add other terminal instructions here.
+- OS X iTerm2, no setup needed
 
-### Convenient `Alt` mappings for your `.vimrc`
+- other?
 
 ### Limitations
 
@@ -43,7 +44,7 @@ Mappings for the following keys are (currently?) not possible:
 if this one is set, movements arrow keys produce funny characters in insert and
 command line mode.
 - `Alt->`, `Alt-[` - couldn't find a way to make these one work
-- `Alt-space` - messes up all other mappings
+- `Alt-space` - when set up, messes up all other mappings
 
 There are more than 90 `Alt` key mappings available, so hopefully you won't
 miss the above 4 that are not (jet?) possible.
