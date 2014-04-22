@@ -29,6 +29,28 @@ Now you can do something like this:
 
 `Alt` behaves as just another modifier key (can't get enough of those, right?)
 
+### Use cases
+
+For example, when having soft-wrapped text in your buffer, to move between
+lines you can use `gj` and `gk` ("g" stands for graphical). When you use it
+a lot, you may realize that it quickly becomes tedious to have to prepend "g"
+every time. Drew Neil in his vimcast ["Soft wrapping text"][soft-wrapping]
+suggests mapping the "Command" key (`D`) to graphical keystrokes:
+
+```viml
+map <D-j> gj
+map <D-k> gk
+```
+
+However, in Terminal vim this is not an option, because the "Command" key is
+used by the OS, and can't be used for mappings. Furthermore, PC users don't
+even *have* a "Command" key. "Alt" mappings to the rescue!
+
+```viml
+map <M-j> gj
+map <M-k> gk
+```
+
 ### Installation
 
 Use your favorite plugin manager.
@@ -98,3 +120,5 @@ To run the tests locally:
 
 @tpope for his [rsi.vim](https://github.com/tpope/vim-rsi) plugin, which was an
 inspiration for this one.
+
+[soft-wrapping]: http://vimcasts.org/episodes/soft-wrapping-text
