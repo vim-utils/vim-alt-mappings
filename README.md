@@ -93,7 +93,7 @@ command line mode.
 - `Alt-space` - when set up, messes up all other mappings
 
 There are more than 90 `Alt` key mappings available, so hopefully you won't
-miss the above 4 that are not (jet?) possible.
+miss the above 4 that are not (yet?) possible.
 
 ### Selectively enable Alt mappings
 
@@ -107,11 +107,11 @@ mappings, for example `x`. It's unlikely you'll ever have `<Esc>x` in your
 macros or mappings.
 - enable `<M-x>` mapping by putting the following in `.vimrc`
 
-    set <M-x>=\<Esc>x
+    `set <M-x>=\<Esc>x`
 
 - map `<M-x>` to something useful and use it!
 
-    map <M-x> :echo "really useful"<cr>
+    `map <M-x> :echo "really useful"<cr>`
 
 ### Tests
 
