@@ -85,7 +85,7 @@ Mappings for the following keys are (currently?) not possible:
 - `Alt-O` (that's `Alt` big o)<br/>
 if this one is set, movements arrow keys produce funny characters in insert and
 command line mode.
-- `Alt->`, `Alt-[` - couldn't find a way to make these one work
+- `Alt->`, `Alt-[` - couldn't find a way to make these work
 - `Alt-space` - when set up, messes up all other mappings
 
 There are more than 90 `Alt` key mappings available, so hopefully you won't
