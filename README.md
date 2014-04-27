@@ -16,6 +16,8 @@ above problems.
 
 # Alt mappings in terminal Vim
 
+![Build Status](https://travis-ci.org/bruno-/vim-alt-mappings.png?branch=master)
+
 This plugin enables `Alt` key mappings in **terminal** vim.
 
 Now you can do something like this:
