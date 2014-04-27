@@ -15,6 +15,6 @@ set rtp+=$SOURCE
 nnoremap Q :qa!<CR>
 EOF
 
-vim -u $VIMRC "+Vader **/*.vader"
+vim -u $VIMRC "+Vader! **/*.vader"
 
 rm -f $VIMRC
