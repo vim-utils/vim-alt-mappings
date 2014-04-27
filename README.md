@@ -14,6 +14,10 @@ So far I don't know how to solve these issues and thus the label "experimental".
 Please get in touch (via github issue) if you have an idea how to solve the
 above problems.
 
+Update: I opened an [issue](https://github.com/tpope/vim-rsi/issues/13) to Tim
+Pope in vim-rsi plugin, since he uses alt mappings there as well. It seems Tim
+was unaware of the problem as well.
+
 # Alt mappings in terminal Vim
 
 ![Build Status](https://travis-ci.org/bruno-/vim-alt-mappings.png?branch=master)
