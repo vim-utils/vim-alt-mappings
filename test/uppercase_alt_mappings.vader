@@ -1,4 +1,4 @@
-Execute (Setup mappings with Meta characters):
+Before (Setup mappings with Meta characters):
   for ascii_num in range(65, 90)
     let char = nr2char(ascii_num)
     exe "map <M-".char."> iMeta-".char." mapping works\<Esc>"

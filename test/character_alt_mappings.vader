@@ -1,4 +1,4 @@
-Execute (Setup mappings with Meta characters):
+Before (Setup mappings with Meta characters):
   let ascii_nums = range(33, 64) + range(91, 96) + [123, 125, 126]
   for ascii_num in ascii_nums
     let char = nr2char(ascii_num)
