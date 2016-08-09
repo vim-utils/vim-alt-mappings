@@ -3,10 +3,6 @@ if exists("g:loaded_alt_mappings") || v:version < 700 || &cp
 endif
 let g:loaded_alt_mappings = 1
 
-set ttimeout
-if &ttimeoutlen == -1
-  set ttimeoutlen=50
-endif
 
 function! s:printable_characters()
   " leaving out problematic characters: 'O', double quote, pipe and '['
@@ -15,7 +11,7 @@ function! s:printable_characters()
 endfunction
 
 function! s:enable_alt_map(char)
-  exe "set <M-".a:char.">=\<Esc>".a:char
+  exe "set <M-".a:char.">=\e".a:char
 endfunction
 
 function! s:enable_alt_map_for_special_chars()
