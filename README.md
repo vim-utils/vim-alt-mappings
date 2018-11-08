@@ -62,15 +62,15 @@ map <M-k> gk
 Use your favorite plugin manager.
 
 - [Pathogen](https://github.com/tpope/vim-pathogen)
-  - just `git clone https://github.com/junegunn/vader.vim.git ~/.vim/bundle/vader.vim`
+  - just `git clone https://github.com/vim-utils/vim-alt-mappings.git ~/.vim/bundle/vim-alt-mappings`
 - [Vundle](https://github.com/gmarik/vundle)
-  - add `Bundle 'junegunn/vader.vim'` to .vimrc
+  - add `Bundle 'vim-utils/vim-alt-mappings'` to .vimrc
   - then run `:BundleInstall`
 - [NeoBundle](https://github.com/Shougo/neobundle.vim)
-  - add `NeoBundle 'junegunn/vader.vim'` to .vimrc
+  - add `NeoBundle 'vim-utils/vim-alt-mappings'` to .vimrc
   - then run `:NeoBundleInstall`
 - [vim-plug](https://github.com/junegunn/vim-plug)
-  - add `Plug 'junegunn/vader.vim'` to .vimrc
+  - add `Plug 'vim-utils/vim-alt-mappings'` to .vimrc
   - then run `:PlugInstall`
 
 ### Terminal related setup
